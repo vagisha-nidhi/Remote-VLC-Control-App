@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#0099cc"
+    tools:context="com.example.vagisha.remotevlccontrol.MainActivity">
+
+
+        <TextView
+            android:id="@+id/mousePad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:keepScreenOn="true"
+            android:text="MOUSE PAD"
+            android:textColor="#33b5e5"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            android:layout_above="@+id/buttonLayout"
+            android:clickable="true"
+            android:background="#0099cc"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/buttonLayout"
+            android:layout_alignParentBottom="true"
+
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/button_previous"
+                android:text="Previous"
+                android:theme="@style/AppTheme.Button"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:id="@+id/button_play_pause"
+                android:layout_weight="1"
+                android:text="Play/Pause"
+                android:theme="@style/AppTheme.Button"/>
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/button_next"
+                android:text="NEXT"
+                android:theme="@style/AppTheme.Button"/>
+        </LinearLayout>
+
+
+</RelativeLayout>
